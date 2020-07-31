@@ -20,7 +20,7 @@ router.route('/add').post(authenticate, (req, res) => {
   });
 
   newCart.save()
-  .then(() => res.json('Product added!'))
+  .then(() => res.json('Product added in cart!'))
   .catch(err => res.status(400).json('Error: ' + err));
 });
 
