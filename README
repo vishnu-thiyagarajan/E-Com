@@ -1,6 +1,6 @@
 ENV SETUP:
     clone the repo
-    cd ECOM
+    cd E-Com
     npm install
     npm start # to start the server
     npm run test # to run test cases
