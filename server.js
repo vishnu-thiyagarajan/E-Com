@@ -18,11 +18,13 @@ app.use(cors());
 app.use(express.json());
 
 const cartsRouter = require('./routes/carts');
+const transactionsRouter = require('./routes/transactions');
 const usersRouter = require('./routes/users');
 const categorysRouter = require('./routes/categorys');
 const productsRouter = require('./routes/products');
 
 app.use('/carts', cartsRouter);
+app.use('/transactions', transactionsRouter);
 app.use('/users', usersRouter);
 app.use('/categorys', categorysRouter);
 app.use('/products', productsRouter);
